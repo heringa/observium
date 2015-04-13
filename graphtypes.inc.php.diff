@@ -1,0 +1,6 @@
+930a931,935
+>
+> $config['graph_types']['device']['junosfw_sessions']['section'] = 'firewall';
+> $config['graph_types']['device']['junosfw_sessions']['order'] = '0';
+> $config['graph_types']['device']['junosfw_sessions']['descr'] = 'Active Sessions';
+>
