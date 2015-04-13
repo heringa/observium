@@ -6,9 +6,9 @@ It takes only a few lines of code to add this functionality, based on the origin
 
 These files are tested up to Observium svn-version 6383.
 
+#### Files and patches
 To enable polling and graphing you need these files and patches:
 
-#### Files and patches
 *Additional files*
 * /opt/observium/html/pages/device/graphs/juniper_session.inc.php
 * /opt/observium/html/includes/graphs/device/junosfw_sessions.inc.php
