@@ -1,0 +1,17 @@
+29a30,45
+> if (strpos($poll_device['sysDescr'], "srx"))
+> {
+>
+> $sessrrd  = "junosfw_sessions.rrd";
+>
+> $snmpdata = snmp_get_multi($device, "jnxJsSPUMonitoringCurrentFlowSession.0", "-OQUs", "JUNIPER-SRX5000-SPU-MONITORING-MIB", mib_dirs("junos"));
+> $sessalloc = $snmpdata[0]['jnxJsSPUMonitoringCurrentFlowSession'];
+>
+> rrdtool_create($device, $sessrrd, "\
+>      DS:allocate:GAUGE:600:0:3000000 ");
+>
+> rrdtool_update($device, "$sessrrd", "N:$sessalloc");
+>
+> $graphs['junosfw_sessions'] = TRUE;
+> }
+>
