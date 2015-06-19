@@ -4,11 +4,11 @@
 >
 > $sessrrd  = "junosfw_sessions.rrd";
 >
-> $snmpdata = snmp_get_multi($device, "jnxJsSPUMonitoringCurrentFlowSession.0", "-OQUs", "JUNIPER-SRX5000-SPU-MONITORING-MIB", mib_dirs("junos"));
-> $sessalloc = $snmpdata[0]['jnxJsSPUMonitoringCurrentFlowSession'];
+> $snmpdata = snmp_get_multi($device, "jnxJsSPUMonitoringCurrentTotalSession.0", "-OQUs", "JUNIPER-SRX5000-SPU-MONITORING-MIB", mib_dirs("junos"));
+> $sessalloc = $snmpdata[0]['jnxJsSPUMonitoringCurrentTotalSession'];
 >
 > rrdtool_create($device, $sessrrd, "\
->      DS:allocate:GAUGE:600:0:3000000 ");
+>      DS:allocate:GAUGE:600:0:100000000 ");
 >
 > rrdtool_update($device, "$sessrrd", "N:$sessalloc");
 >
