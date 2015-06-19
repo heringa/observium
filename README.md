@@ -4,7 +4,9 @@ Observium customization
 There is no support for Juniper SRX session graphs built in Observium by its maintainers.
 It takes only a few lines of code to add this functionality, based on the original Observium code.
 
-These files are tested up to Observium svn-version 6383.
+Many thanks to Heinrich Mainka (Telefonica) for his contribution to make this work on high-end SRX's.
+
+These files are tested up to Observium svn-version 6462.
 
 #### Files and patches
 To enable polling and graphing you need these files and patches:
