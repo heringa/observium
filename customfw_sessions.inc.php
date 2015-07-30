@@ -30,11 +30,8 @@ $rrd_filename = get_rrd_path($device, "panos-sessions.rrd");
 $ds = "sessions";
 
 $colour_area = "f5f5f5";
-$colour_line = "cc0000";
+$colour_line = "1f78b4";
 
-//$colour_area_max = "9999cc";
-
-//$graph_max = 1;
 $scale_min = 0;
 
 $unit_text = "Sessions";
