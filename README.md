@@ -1,10 +1,12 @@
 # observium
 
 
-- Superseded -
+__________
+Superseded
 This code is no longer needed from juli 2015.
+
 SRX session graphs are now supported natively by Observium.
---------------
+__________
 
 Observium customization
 
