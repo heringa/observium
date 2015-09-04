@@ -1,4 +1,11 @@
 # observium
+
+
+- Superseded -
+This code is no longer needed from juli 2015.
+SRX session graphs are now supported natively by Observium.
+--------------
+
 Observium customization
 
 There is no support for Juniper SRX session graphs built in Observium by its maintainers.
